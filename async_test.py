@@ -4,12 +4,11 @@ import time
 
 def ping():
     for i in range(100):
-        res = requests.get("http://127.0.0.1:8000/audit/data_dict")
-        res = requests.get("http://127.0.0.1:8080/audit/CALL8786")
-        res = requests.get("http://127.0.0.1:8080/audit/RCFA5311")
-        res = requests.get("http://127.0.0.1:8080/audit/RCFD0090")
-        res = requests.get("http://127.0.0.1:8080/audit/RCFD0081")
-
+        requests.get("http://127.0.0.1:8000/audit/data_dict")
+        requests.get("http://127.0.0.1:8080/audit/CALL8786")
+        requests.get("http://127.0.0.1:8080/audit/RCFA5311")
+        requests.get("http://127.0.0.1:8080/audit/RCFD0090")
+        requests.get("http://127.0.0.1:8080/audit/RCFD0081")
         print(i)
 
 
